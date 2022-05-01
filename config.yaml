@@ -1,0 +1,13 @@
+baseURL: http://localhost/
+title: Hugo Test Site
+# alternate copyright company text
+copyright: Web Design Inc.
+# controls number of pages displayed on list pages
+paginate: 5
+# controls the summary length on list pages
+summaryLength: 7
+# this is required so that Hugo will render markdown to HTML
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
