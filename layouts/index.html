@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="hero">
-  <div class="container col-xxl-8">
-    <div class="row align-items-center justify-content-center py-5 g-5">
+  <div class="container col-xxl-8 g-5">
+    <div class="row align-items-center justify-content-center py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="/img/bootstrap-themes.png" alt="Bootstrap Themes" class="img-fluid d-block mx-auto">
       </div>
@@ -34,8 +34,8 @@
         <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
           <div class="carousel-indicators">
             {{ range $index, $value := $images }}
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $index }}" 
-            {{ if eq $index 0 }}class="active" aria-current="true" {{ end }}aria-label="Slide {{ add $index 1}}"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $index }}" {{ if eq
+              $index 0 }}class="active" aria-current="true" {{ end }}aria-label="Slide {{ add $index 1}}"></button>
             {{ end }}
           </div>
           <div class="carousel-inner">
@@ -49,11 +49,13 @@
             </div>
             {{ end }}
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
